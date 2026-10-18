@@ -1,0 +1,14 @@
+{
+  "sourceRows": 16828,
+  "eligible2025": 12138,
+  "publishedCount": 12138,
+  "excluded": 4690,
+  "missing2025": 4690,
+  "belowThreshold": 0,
+  "countriesOrAreas": 191,
+  "populationSum": 3685888174,
+  "minimumPeople": 50016,
+  "maximumPeople": 41913860,
+  "sourceSha256": "3a96030d87aec6c1c50f658d5321067d6345e1ab936c5d2854524f972caa75c0",
+  "sampleRecordsUnchanged": true
+}

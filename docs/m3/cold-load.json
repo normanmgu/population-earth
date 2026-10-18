@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-18",
+  "browser": "155.0.8059.84",
+  "build": "ordinary production; no QA hook",
+  "throttle": "20 Mbps download, 50 ms latency; cache disabled; local HTTP gzip server; 3 fresh browser contexts",
+  "fullCityJsonBytes": 7623016,
+  "fullCityJsonGzipBytes": 509219,
+  "runs": [
+    {
+      "readyMs": 920,
+      "qaHookAbsent": true,
+      "resources": [
+        {
+          "name": "/assets/index-DE_UeBuv.js",
+          "transferBytes": 252118,
+          "encodedBytes": 251818
+        },
+        {
+          "name": "/assets/index-BHyP1bgs.css",
+          "transferBytes": 3202,
+          "encodedBytes": 2902
+        },
+        {
+          "name": "/data/m3-2025-v1/cities.json",
+          "transferBytes": 509519,
+          "encodedBytes": 509219
+        },
+        {
+          "name": "/data/m3-2025-v1/manifest.json",
+          "transferBytes": 2086,
+          "encodedBytes": 1786
+        },
+        {
+          "name": "/textures/earth-base-2k.png",
+          "transferBytes": 861465,
+          "encodedBytes": 861165
+        }
+      ],
+      "navigationBytes": 690,
+      "totalTransferBytes": 1629080
+    },
+    {
+      "readyMs": 920.5,
+      "qaHookAbsent": true,
+      "resources": [
+        {
+          "name": "/assets/index-DE_UeBuv.js",
+          "transferBytes": 252118,
+          "encodedBytes": 251818
+        },
+        {
+          "name": "/assets/index-BHyP1bgs.css",
+          "transferBytes": 3202,
+          "encodedBytes": 2902
+        },
+        {
+          "name": "/data/m3-2025-v1/cities.json",
+          "transferBytes": 509519,
+          "encodedBytes": 509219
+        },
+        {
+          "name": "/data/m3-2025-v1/manifest.json",
+          "transferBytes": 2086,
+          "encodedBytes": 1786
+        },
+        {
+          "name": "/textures/earth-base-2k.png",
+          "transferBytes": 861465,
+          "encodedBytes": 861165
+        }
+      ],
+      "navigationBytes": 690,
+      "totalTransferBytes": 1629080
+    },
+    {
+      "readyMs": 970.5,
+      "qaHookAbsent": true,
+      "resources": [
+        {
+          "name": "/assets/index-DE_UeBuv.js",
+          "transferBytes": 252118,
+          "encodedBytes": 251818
+        },
+        {
+          "name": "/assets/index-BHyP1bgs.css",
+          "transferBytes": 3202,
+          "encodedBytes": 2902
+        },
+        {
+          "name": "/data/m3-2025-v1/cities.json",
+          "transferBytes": 509519,
+          "encodedBytes": 509219
+        },
+        {
+          "name": "/data/m3-2025-v1/manifest.json",
+          "transferBytes": 2086,
+          "encodedBytes": 1786
+        },
+        {
+          "name": "/textures/earth-base-2k.png",
+          "transferBytes": 861465,
+          "encodedBytes": 861165
+        }
+      ],
+      "navigationBytes": 690,
+      "totalTransferBytes": 1629080
+    }
+  ],
+  "limitations": "Local test server, not CDN latency or real internet variance. Readiness sampled by Playwright after first labels and loaded Earth; subsequent search selection verified."
+}

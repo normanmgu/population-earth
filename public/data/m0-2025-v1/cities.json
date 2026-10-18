@@ -1,0 +1,969 @@
+{
+  "schemaVersion": "1.0.0",
+  "datasetVersion": "m0-2025-v1",
+  "thresholdPeople": 50000,
+  "referenceYear": 2025,
+  "coverage": "sample",
+  "cities": [
+    {
+      "id": "un-wup2025:5590",
+      "sourceRecordId": "5590",
+      "nameEn": "Jakarta",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "IDN",
+        "name": "Indonesia",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 106.824820671592,
+      "latitude": -6.32754415510498,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 41913860,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:5991",
+      "sourceRecordId": "5991",
+      "nameEn": "Bandung",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "IDN",
+        "name": "Indonesia",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 107.628187870505,
+      "latitude": -6.92331894949182,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 8909104,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:6249",
+      "sourceRecordId": "6249",
+      "nameEn": "Dhaka",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "BGD",
+        "name": "Bangladesh",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 90.5792067049057,
+      "latitude": 23.7517339465729,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 36585479,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:7537",
+      "sourceRecordId": "7537",
+      "nameEn": "Chattogram",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "BGD",
+        "name": "Bangladesh",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 91.8103998549196,
+      "latitude": 22.3728677361523,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 4983553,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:6030",
+      "sourceRecordId": "6030",
+      "nameEn": "Tōkyō (Tokyo)",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "JPN",
+        "name": "Japan",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 139.655776246888,
+      "latitude": 35.6661787766663,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 33412512,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:4490",
+      "sourceRecordId": "4490",
+      "nameEn": "Osaka",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "JPN",
+        "name": "Japan",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 135.479603274489,
+      "latitude": 34.7225105202779,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 12964145,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:8364",
+      "sourceRecordId": "8364",
+      "nameEn": "New Delhi",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "IND",
+        "name": "India",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 77.2078130770808,
+      "latitude": 28.6257327699734,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 30222405,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:11821",
+      "sourceRecordId": "11821",
+      "nameEn": "Kolkata",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "IND",
+        "name": "India",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 88.3536574635294,
+      "latitude": 22.5859710859864,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 22549738,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:11738",
+      "sourceRecordId": "11738",
+      "nameEn": "Shanghai",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "CHN",
+        "name": "China",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 121.436920949501,
+      "latitude": 31.2147761687116,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 29558908,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:11306",
+      "sourceRecordId": "11306",
+      "nameEn": "Guangzhou",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "CHN",
+        "name": "China",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 113.285893378223,
+      "latitude": 23.142319499894,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 27563372,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:4435",
+      "sourceRecordId": "4435",
+      "nameEn": "Al-Qahirah (Cairo)",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "EGY",
+        "name": "Egypt",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 31.2607144569505,
+      "latitude": 30.0646095252452,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 25566102,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:275",
+      "sourceRecordId": "275",
+      "nameEn": "Alexandria",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "EGY",
+        "name": "Egypt",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 29.9517660943627,
+      "latitude": 31.1933695758061,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 7266957,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:1265",
+      "sourceRecordId": "1265",
+      "nameEn": "Lagos",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "NGA",
+        "name": "Nigeria",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 3.31028078517139,
+      "latitude": 6.56844874683968,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 12791699,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:7330",
+      "sourceRecordId": "7330",
+      "nameEn": "Onitsha",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "NGA",
+        "name": "Nigeria",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 6.82053185724296,
+      "latitude": 6.17349813029485,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 5627706,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:3664",
+      "sourceRecordId": "3664",
+      "nameEn": "Johannesburg",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "ZAF",
+        "name": "South Africa",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 27.8600917239307,
+      "latitude": -26.1204492874788,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 7077175,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:413",
+      "sourceRecordId": "413",
+      "nameEn": "Cape Town",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "ZAF",
+        "name": "South Africa",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 18.5999587421507,
+      "latitude": -33.9805360922243,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 4508921,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:2033",
+      "sourceRecordId": "2033",
+      "nameEn": "Nairobi",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "KEN",
+        "name": "Kenya",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 36.845161927435,
+      "latitude": -1.26592113731299,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 6134334,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:3077",
+      "sourceRecordId": "3077",
+      "nameEn": "Mombasa",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "KEN",
+        "name": "Kenya",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 39.6605838796766,
+      "latitude": -4.0358059413137,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 1456207,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:5938",
+      "sourceRecordId": "5938",
+      "nameEn": "London",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "GBR",
+        "name": "United Kingdom",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": -0.1269853785119,
+      "latitude": 51.508926472857,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 10416420,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:3979",
+      "sourceRecordId": "3979",
+      "nameEn": "Birmingham",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "GBR",
+        "name": "United Kingdom",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": -1.96039982513583,
+      "latitude": 52.5046010416867,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 2631757,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:2994",
+      "sourceRecordId": "2994",
+      "nameEn": "Paris",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "FRA",
+        "name": "France",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 2.35557109932262,
+      "latitude": 48.8491114639848,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 9381921,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:4068",
+      "sourceRecordId": "4068",
+      "nameEn": "Lyon",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "FRA",
+        "name": "France",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 4.85885943098658,
+      "latitude": 45.7528788427831,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 1202985,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:5576",
+      "sourceRecordId": "5576",
+      "nameEn": "Berlin",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "DEU",
+        "name": "Germany",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 13.3999531382876,
+      "latitude": 52.5018146389819,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 3560908,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:675",
+      "sourceRecordId": "675",
+      "nameEn": "Essen",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "DEU",
+        "name": "Germany",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 6.97216877251344,
+      "latitude": 51.4886212700177,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 2717087,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:8354",
+      "sourceRecordId": "8354",
+      "nameEn": "New York City",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "USA",
+        "name": "United States of America",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": -73.9326853899908,
+      "latitude": 40.7378578900136,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 13920148,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:1725",
+      "sourceRecordId": "1725",
+      "nameEn": "Los Angeles",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "USA",
+        "name": "United States of America",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": -118.116720299597,
+      "latitude": 33.9842364485583,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 12740420,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:2925",
+      "sourceRecordId": "2925",
+      "nameEn": "Toronto",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "CAN",
+        "name": "Canada",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": -79.4735743414679,
+      "latitude": 43.7195058480876,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 5494431,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:3645",
+      "sourceRecordId": "3645",
+      "nameEn": "Montreal",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "CAN",
+        "name": "Canada",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": -73.6660077343496,
+      "latitude": 45.5363747662468,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 2668723,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:5439",
+      "sourceRecordId": "5439",
+      "nameEn": "Ciudad de México (Mexico City)",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "MEX",
+        "name": "Mexico",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": -99.1049386818456,
+      "latitude": 19.4448241307528,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 17734212,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:3099",
+      "sourceRecordId": "3099",
+      "nameEn": "Guadalajara",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "MEX",
+        "name": "Mexico",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": -103.347430134243,
+      "latitude": 20.6567869138028,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 4135440,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:7303",
+      "sourceRecordId": "7303",
+      "nameEn": "São Paulo",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "BRA",
+        "name": "Brazil",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": -46.5998582137567,
+      "latitude": -23.5767447751221,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 18949790,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:7935",
+      "sourceRecordId": "7935",
+      "nameEn": "Rio de Janeiro",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "BRA",
+        "name": "Brazil",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": -43.3666524274637,
+      "latitude": -22.8458452131082,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 9500336,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:4459",
+      "sourceRecordId": "4459",
+      "nameEn": "Buenos Aires",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "ARG",
+        "name": "Argentina",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": -58.51281868345,
+      "latitude": -34.6507889984493,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 14017736,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:2381",
+      "sourceRecordId": "2381",
+      "nameEn": "Cordoba",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "ARG",
+        "name": "Argentina",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": -64.2016138572961,
+      "latitude": -31.4016001921993,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 1460491,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:1987",
+      "sourceRecordId": "1987",
+      "nameEn": "Lima",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "PER",
+        "name": "Peru",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": -77.0110019286206,
+      "latitude": -12.0445752902063,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 10580241,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:3272",
+      "sourceRecordId": "3272",
+      "nameEn": "Arequipa",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "PER",
+        "name": "Peru",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": -71.5283655800097,
+      "latitude": -16.4017865884952,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 977496,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:2139",
+      "sourceRecordId": "2139",
+      "nameEn": "Sydney",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "AUS",
+        "name": "Australia",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 151.078965122611,
+      "latitude": -33.8589905191914,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 4150917,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:1634",
+      "sourceRecordId": "1634",
+      "nameEn": "Melbourne",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "AUS",
+        "name": "Australia",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 145.058580063275,
+      "latitude": -37.8309340010454,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 3639893,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:1005",
+      "sourceRecordId": "1005",
+      "nameEn": "Auckland",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "NZL",
+        "name": "New Zealand",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 174.775921871622,
+      "latitude": -36.9032720407897,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 1123094,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:1232",
+      "sourceRecordId": "1232",
+      "nameEn": "Glenfield",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "NZL",
+        "name": "New Zealand",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 174.737168936191,
+      "latitude": -36.7724497999745,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 275322,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:338",
+      "sourceRecordId": "338",
+      "nameEn": "Suva",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "FJI",
+        "name": "Fiji",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 178.467443765306,
+      "latitude": -18.105165215863,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 225882,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:177",
+      "sourceRecordId": "177",
+      "nameEn": "Lautoka",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "FJI",
+        "name": "Fiji",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 177.455555819949,
+      "latitude": -17.6227732436456,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 53310,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:9137",
+      "sourceRecordId": "9137",
+      "nameEn": "Meerganj",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "IND",
+        "name": "India",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 79.2048264129028,
+      "latitude": 28.5425372899306,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 50018,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:8683",
+      "sourceRecordId": "8683",
+      "nameEn": "Ibi",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "NGA",
+        "name": "Nigeria",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 9.74617982945237,
+      "latitude": 8.17951753410091,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 50144,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:4972",
+      "sourceRecordId": "4972",
+      "nameEn": "Schwerin",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "DEU",
+        "name": "Germany",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 11.3986004263123,
+      "latitude": 53.6354944017525,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 50837,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:178",
+      "sourceRecordId": "178",
+      "nameEn": "Mililani",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "USA",
+        "name": "United States of America",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": -158.007408793757,
+      "latitude": 21.460262343859,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 51888,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:8215",
+      "sourceRecordId": "8215",
+      "nameEn": "Quixadá",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "BRA",
+        "name": "Brazil",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": -39.0185427393547,
+      "latitude": -4.96940940961967,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 50677,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    },
+    {
+      "id": "un-wup2025:1118",
+      "sourceRecordId": "1118",
+      "nameEn": "Elizabeth North",
+      "localNames": [],
+      "countryOrArea": {
+        "code": "AUS",
+        "name": "Australia",
+        "codeSystem": "ISO-3166-1-alpha-3"
+      },
+      "longitude": 138.687518128901,
+      "latitude": -34.6898359332709,
+      "coordinateSourceId": "un-wup2025-f21",
+      "coordinateMethod": "publisher population-weighted centroid",
+      "population": 55260,
+      "referenceYear": 2025,
+      "valueStatus": "estimate",
+      "definitionId": "un-wup2025-degurba-city",
+      "populationSourceId": "un-wup2025-f21"
+    }
+  ]
+}

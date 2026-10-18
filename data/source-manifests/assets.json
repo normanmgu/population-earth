@@ -1,0 +1,66 @@
+{
+  "auditDate": "2026-10-17",
+  "assets": [
+    {
+      "id": "city-sample",
+      "path": "public/data/m0-2025-v1/cities.json",
+      "status": "derived and shipped",
+      "license": "CC-BY-3.0-IGO",
+      "sourceManifest": "cities.json",
+      "sha256": "c490cb259f120d64e129781f2750627d730892f9619bb64f8a9d44b2a450fc92"
+    },
+    {
+      "id": "approved-concept",
+      "path": "docs/population-earth-concept.png",
+      "status": "existing user-approved design reference only; not shipped as geography or data",
+      "license": "Not independently established; internal reference only",
+      "sha256": "d4865e84940c063fdd841e89dcf98704561495774c6801786f548766bb30248c"
+    },
+    {
+      "id": "earth-base",
+      "title": "Natural Earth II, 1:50m, shaded relief and water, 3.2.0",
+      "url": "https://www.naturalearthdata.com/downloads/50m-raster-data/50m-natural-earth-2/",
+      "license": "Public domain",
+      "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "attribution": "Made with Natural Earth.",
+      "status": "Acquired, bounds verified, transformed and shipped for M1",
+      "plannedProcessing": "2K equirectangular base; restrained color treatment. No population interpretation.",
+      "archiveUrl": "https://naturalearth.s3.amazonaws.com/50m_raster/NE2_50M_SR_W.zip",
+      "archiveSha256": "7e0e07089b699a3cccad98dd1b2446390d8e3f8c5006359d477a329cebcafaa9",
+      "sourceDimensions": [
+        10800,
+        5400
+      ],
+      "worldFile": [
+        0.03333333333333,
+        0.0,
+        0.0,
+        -0.03333333333333,
+        -179.98333333333332,
+        89.98333333333333
+      ],
+      "bounds": [
+        -179.99999999999997,
+        -89.99999999998202,
+        179.99999999996405,
+        90.0
+      ],
+      "path": "public/textures/earth-base-2k.png",
+      "sha256": "d41b00490caf7bcc43929463fdc1041122fad4a3698e9b4667313b0fee1072d8",
+      "dimensions": [
+        2048,
+        1024
+      ],
+      "processing": "scripts/assets/prepare-earth.py: Lanczos resize, muted charcoal land / navy water using source blue-channel contrast. North-up; no crop, rotation or mirroring. Decorative relief only.",
+      "runtime": "Pillow 12.3.0; numpy 2.3.5"
+    },
+    {
+      "id": "normal-map",
+      "status": "Optional; deferred. No unlicensed normal map imported."
+    },
+    {
+      "id": "fonts",
+      "status": "System fonts only; no font files redistributed."
+    }
+  ]
+}

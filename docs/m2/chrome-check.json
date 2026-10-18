@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-18",
+  "browser": "155.0.8059.84",
+  "mode": "headless installed Chrome on M0 host",
+  "viewport": [
+    1440,
+    900
+  ],
+  "dpr": 1.5,
+  "graphics": {
+    "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)"
+  },
+  "checks": [
+    "48-city load, persistent disclosure, linear default, reduced-motion idle rendering",
+    "Fixed linear/log geometry and persistent scale labels",
+    "Keyboard search selection, unchanged heights, rounded source precision, provenance and definition",
+    "Layer toggle, hidden-layer search, zoom to selection and unchanged geometry",
+    "Raycast pillar selection, dense-region chooser, drag out-and-back does not select",
+    "Keyboard rotation/reset, capped labels, no far-side HTML labels",
+    "390px layout, sample disclosure, searchable selection and five-label cap",
+    "Context loss preserves details and rebuilds all resources",
+    "WebGL2 unavailable still supports search, details and sources",
+    "City-data failure/retry independent of globe",
+    "Texture failure/retry independent of city data",
+    "Normal-motion growth, replay, growth toggle and live reduced-motion change"
+  ],
+  "errors": []
+}

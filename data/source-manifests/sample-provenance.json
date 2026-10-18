@@ -1,0 +1,386 @@
+{
+  "un-wup2025:5590": {
+    "row": 9580,
+    "populationCell": "BJ9580",
+    "populationThousandsRaw": "41913.86",
+    "longitudeCell": "J9580",
+    "latitudeCell": "K9580",
+    "sourceNote": null
+  },
+  "un-wup2025:5991": {
+    "row": 9490,
+    "populationCell": "BJ9490",
+    "populationThousandsRaw": "8909.1039999999994",
+    "longitudeCell": "J9490",
+    "latitudeCell": "K9490",
+    "sourceNote": null
+  },
+  "un-wup2025:6249": {
+    "row": 722,
+    "populationCell": "BJ722",
+    "populationThousandsRaw": "36585.478999999999",
+    "longitudeCell": "J722",
+    "latitudeCell": "K722",
+    "sourceNote": null
+  },
+  "un-wup2025:7537": {
+    "row": 701,
+    "populationCell": "BJ701",
+    "populationThousandsRaw": "4983.5529999999999",
+    "longitudeCell": "J701",
+    "latitudeCell": "K701",
+    "sourceNote": null
+  },
+  "un-wup2025:6030": {
+    "row": 10647,
+    "populationCell": "BJ10647",
+    "populationThousandsRaw": "33412.512000000002",
+    "longitudeCell": "J10647",
+    "latitudeCell": "K10647",
+    "sourceNote": null
+  },
+  "un-wup2025:4490": {
+    "row": 10596,
+    "populationCell": "BJ10596",
+    "populationThousandsRaw": "12964.145",
+    "longitudeCell": "J10596",
+    "latitudeCell": "K10596",
+    "sourceNote": null
+  },
+  "un-wup2025:8364": {
+    "row": 8533,
+    "populationCell": "BJ8533",
+    "populationThousandsRaw": "30222.404999999999",
+    "longitudeCell": "J8533",
+    "latitudeCell": "K8533",
+    "sourceNote": null
+  },
+  "un-wup2025:11821": {
+    "row": 8057,
+    "populationCell": "BJ8057",
+    "populationThousandsRaw": "22549.738000000001",
+    "longitudeCell": "J8057",
+    "latitudeCell": "K8057",
+    "sourceNote": null
+  },
+  "un-wup2025:11738": {
+    "row": 3438,
+    "populationCell": "BJ3438",
+    "populationThousandsRaw": "29558.907999999999",
+    "longitudeCell": "J3438",
+    "latitudeCell": "K3438",
+    "sourceNote": "5"
+  },
+  "un-wup2025:11306": {
+    "row": 2437,
+    "populationCell": "BJ2437",
+    "populationThousandsRaw": "27563.371999999999",
+    "longitudeCell": "J2437",
+    "latitudeCell": "K2437",
+    "sourceNote": "5"
+  },
+  "un-wup2025:4435": {
+    "row": 5381,
+    "populationCell": "BJ5381",
+    "populationThousandsRaw": "25566.101999999999",
+    "longitudeCell": "J5381",
+    "latitudeCell": "K5381",
+    "sourceNote": null
+  },
+  "un-wup2025:275": {
+    "row": 5387,
+    "populationCell": "BJ5387",
+    "populationThousandsRaw": "7266.9570000000003",
+    "longitudeCell": "J5387",
+    "latitudeCell": "K5387",
+    "sourceNote": null
+  },
+  "un-wup2025:1265": {
+    "row": 12301,
+    "populationCell": "BJ12301",
+    "populationThousandsRaw": "12791.699000000001",
+    "longitudeCell": "J12301",
+    "latitudeCell": "K12301",
+    "sourceNote": null
+  },
+  "un-wup2025:7330": {
+    "row": 12447,
+    "populationCell": "BJ12447",
+    "populationThousandsRaw": "5627.7060000000001",
+    "longitudeCell": "J12447",
+    "latitudeCell": "K12447",
+    "sourceNote": null
+  },
+  "un-wup2025:3664": {
+    "row": 14274,
+    "populationCell": "BJ14274",
+    "populationThousandsRaw": "7077.1750000000002",
+    "longitudeCell": "J14274",
+    "latitudeCell": "K14274",
+    "sourceNote": null
+  },
+  "un-wup2025:413": {
+    "row": 14247,
+    "populationCell": "BJ14247",
+    "populationThousandsRaw": "4508.9210000000003",
+    "longitudeCell": "J14247",
+    "latitudeCell": "K14247",
+    "sourceNote": null
+  },
+  "un-wup2025:2033": {
+    "row": 10817,
+    "populationCell": "BJ10817",
+    "populationThousandsRaw": "6134.3339999999998",
+    "longitudeCell": "J10817",
+    "latitudeCell": "K10817",
+    "sourceNote": null
+  },
+  "un-wup2025:3077": {
+    "row": 10812,
+    "populationCell": "BJ10812",
+    "populationThousandsRaw": "1456.2070000000001",
+    "longitudeCell": "J10812",
+    "latitudeCell": "K10812",
+    "sourceNote": null
+  },
+  "un-wup2025:5938": {
+    "row": 15518,
+    "populationCell": "BJ15518",
+    "populationThousandsRaw": "10416.42",
+    "longitudeCell": "J15518",
+    "latitudeCell": "K15518",
+    "sourceNote": "21"
+  },
+  "un-wup2025:3979": {
+    "row": 15435,
+    "populationCell": "BJ15435",
+    "populationThousandsRaw": "2631.7570000000001",
+    "longitudeCell": "J15435",
+    "latitudeCell": "K15435",
+    "sourceNote": "21"
+  },
+  "un-wup2025:2994": {
+    "row": 6265,
+    "populationCell": "BJ6265",
+    "populationThousandsRaw": "9381.9210000000003",
+    "longitudeCell": "J6265",
+    "latitudeCell": "K6265",
+    "sourceNote": "26"
+  },
+  "un-wup2025:4068": {
+    "row": 6248,
+    "populationCell": "BJ6248",
+    "populationThousandsRaw": "1202.9849999999999",
+    "longitudeCell": "J6248",
+    "latitudeCell": "K6248",
+    "sourceNote": "26"
+  },
+  "un-wup2025:5576": {
+    "row": 6329,
+    "populationCell": "BJ6329",
+    "populationThousandsRaw": "3560.9079999999999",
+    "longitudeCell": "J6329",
+    "latitudeCell": "K6329",
+    "sourceNote": null
+  },
+  "un-wup2025:675": {
+    "row": 6350,
+    "populationCell": "BJ6350",
+    "populationThousandsRaw": "2717.087",
+    "longitudeCell": "J6350",
+    "latitudeCell": "K6350",
+    "sourceNote": null
+  },
+  "un-wup2025:8354": {
+    "row": 16007,
+    "populationCell": "BJ16007",
+    "populationThousandsRaw": "13920.147999999999",
+    "longitudeCell": "J16007",
+    "latitudeCell": "K16007",
+    "sourceNote": "32"
+  },
+  "un-wup2025:1725": {
+    "row": 15960,
+    "populationCell": "BJ15960",
+    "populationThousandsRaw": "12740.42",
+    "longitudeCell": "J15960",
+    "latitudeCell": "K15960",
+    "sourceNote": "32"
+  },
+  "un-wup2025:2925": {
+    "row": 1792,
+    "populationCell": "BJ1792",
+    "populationThousandsRaw": "5494.4309999999996",
+    "longitudeCell": "J1792",
+    "latitudeCell": "K1792",
+    "sourceNote": null
+  },
+  "un-wup2025:3645": {
+    "row": 1764,
+    "populationCell": "BJ1764",
+    "populationThousandsRaw": "2668.723",
+    "longitudeCell": "J1764",
+    "latitudeCell": "K1764",
+    "sourceNote": null
+  },
+  "un-wup2025:5439": {
+    "row": 11157,
+    "populationCell": "BJ11157",
+    "populationThousandsRaw": "17734.212",
+    "longitudeCell": "J11157",
+    "latitudeCell": "K11157",
+    "sourceNote": null
+  },
+  "un-wup2025:3099": {
+    "row": 11185,
+    "populationCell": "BJ11185",
+    "populationThousandsRaw": "4135.4399999999996",
+    "longitudeCell": "J11185",
+    "latitudeCell": "K11185",
+    "sourceNote": null
+  },
+  "un-wup2025:7303": {
+    "row": 1472,
+    "populationCell": "BJ1472",
+    "populationThousandsRaw": "18949.79",
+    "longitudeCell": "J1472",
+    "latitudeCell": "K1472",
+    "sourceNote": null
+  },
+  "un-wup2025:7935": {
+    "row": 1427,
+    "populationCell": "BJ1427",
+    "populationThousandsRaw": "9500.3359999999993",
+    "longitudeCell": "J1427",
+    "latitudeCell": "K1427",
+    "sourceNote": null
+  },
+  "un-wup2025:4459": {
+    "row": 473,
+    "populationCell": "BJ473",
+    "populationThousandsRaw": "14017.736000000001",
+    "longitudeCell": "J473",
+    "latitudeCell": "K473",
+    "sourceNote": null
+  },
+  "un-wup2025:2381": {
+    "row": 482,
+    "populationCell": "BJ482",
+    "populationThousandsRaw": "1460.491",
+    "longitudeCell": "J482",
+    "latitudeCell": "K482",
+    "sourceNote": null
+  },
+  "un-wup2025:1987": {
+    "row": 13251,
+    "populationCell": "BJ13251",
+    "populationThousandsRaw": "10580.241",
+    "longitudeCell": "J13251",
+    "latitudeCell": "K13251",
+    "sourceNote": null
+  },
+  "un-wup2025:3272": {
+    "row": 13225,
+    "populationCell": "BJ13225",
+    "populationThousandsRaw": "977.49599999999998",
+    "longitudeCell": "J13225",
+    "latitudeCell": "K13225",
+    "sourceNote": null
+  },
+  "un-wup2025:2139": {
+    "row": 589,
+    "populationCell": "BJ589",
+    "populationThousandsRaw": "4150.9170000000004",
+    "longitudeCell": "J589",
+    "latitudeCell": "K589",
+    "sourceNote": "33"
+  },
+  "un-wup2025:1634": {
+    "row": 578,
+    "populationCell": "BJ578",
+    "populationThousandsRaw": "3639.893",
+    "longitudeCell": "J578",
+    "latitudeCell": "K578",
+    "sourceNote": "33"
+  },
+  "un-wup2025:1005": {
+    "row": 11748,
+    "populationCell": "BJ11748",
+    "populationThousandsRaw": "1123.0940000000001",
+    "longitudeCell": "J11748",
+    "latitudeCell": "K11748",
+    "sourceNote": "34"
+  },
+  "un-wup2025:1232": {
+    "row": 11751,
+    "populationCell": "BJ11751",
+    "populationThousandsRaw": "275.322",
+    "longitudeCell": "J11751",
+    "latitudeCell": "K11751",
+    "sourceNote": "34"
+  },
+  "un-wup2025:338": {
+    "row": 6195,
+    "populationCell": "BJ6195",
+    "populationThousandsRaw": "225.88200000000001",
+    "longitudeCell": "J6195",
+    "latitudeCell": "K6195",
+    "sourceNote": null
+  },
+  "un-wup2025:177": {
+    "row": 6194,
+    "populationCell": "BJ6194",
+    "populationThousandsRaw": "53.31",
+    "longitudeCell": "J6194",
+    "latitudeCell": "K6194",
+    "sourceNote": null
+  },
+  "un-wup2025:9137": {
+    "row": 8332,
+    "populationCell": "BJ8332",
+    "populationThousandsRaw": "50.018000000000001",
+    "longitudeCell": "J8332",
+    "latitudeCell": "K8332",
+    "sourceNote": null
+  },
+  "un-wup2025:8683": {
+    "row": 12132,
+    "populationCell": "BJ12132",
+    "populationThousandsRaw": "50.143999999999998",
+    "longitudeCell": "J12132",
+    "latitudeCell": "K12132",
+    "sourceNote": null
+  },
+  "un-wup2025:4972": {
+    "row": 6421,
+    "populationCell": "BJ6421",
+    "populationThousandsRaw": "50.837000000000003",
+    "longitudeCell": "J6421",
+    "latitudeCell": "K6421",
+    "sourceNote": null
+  },
+  "un-wup2025:178": {
+    "row": 15984,
+    "populationCell": "BJ15984",
+    "populationThousandsRaw": "51.887999999999998",
+    "longitudeCell": "J15984",
+    "latitudeCell": "K15984",
+    "sourceNote": "32"
+  },
+  "un-wup2025:8215": {
+    "row": 1413,
+    "populationCell": "BJ1413",
+    "populationThousandsRaw": "50.677",
+    "longitudeCell": "J1413",
+    "latitudeCell": "K1413",
+    "sourceNote": null
+  },
+  "un-wup2025:1118": {
+    "row": 566,
+    "populationCell": "BJ566",
+    "populationThousandsRaw": "55.26",
+    "longitudeCell": "J566",
+    "latitudeCell": "K566",
+    "sourceNote": "33"
+  }
+}

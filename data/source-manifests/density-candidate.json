@@ -1,0 +1,26 @@
+{
+  "id": "jrc-ghs-wup-pop-r2025a-2025",
+  "status": "M0 candidate; no raster downloaded or numeric checks claimed",
+  "dataset": "GHS_WUP_POP_E2025_GLOBE_R2025A_54009_1000_V1_0",
+  "epoch": 2025,
+  "valueStatus": "projection",
+  "sourceUnits": "people per cell",
+  "outputUnits": "people per square kilometre",
+  "crs": "World Mollweide; verify WKT/authority from TIFF (publisher labels EPSG:54009)",
+  "resolutionMetres": 1000,
+  "advertisedSizeMB": 240.99,
+  "noData": -200,
+  "url": "https://human-settlement.emergency.copernicus.eu/ghs_wup_pop_r2025a.php",
+  "catalogueUrl": "https://data.jrc.ec.europa.eu/dataset/adba95af-db56-4569-acd3-9513201eba30",
+  "license": "European Commission reuse notice; acknowledge source",
+  "attribution": "European Commission, Joint Research Centre, GHS-WUP-POP R2025A; Schiavina et al., DOI 10.2905/adba95af-db56-4569-acd3-9513201eba30",
+  "risks": [
+    "The product page also contains a contradictory 100 m description; inspect actual TIFF transform before processing.",
+    "2025 raster is a projection; selected UN 2025 city table is an estimate. Do not claim exact agreement.",
+    "Preserve masks and counts. Sum counts and valid represented area before division.",
+    "Verify equal-area cell areas and count conservation through geographic reprojection. Proposed relative global-count tolerance 0.1%; measure, do not assume.",
+    "Check antimeridian, poles, coasts, zero versus no-data; bounded GDAL memory on 8 GB hardware.",
+    "Catalogue citation year differs from product page (2026 versus 2025); retain release and DOI, record archive metadata when acquired."
+  ],
+  "nextGate": "Before M4 display: checksum, TIFF metadata, conservation and seam tests; lossless overview and tile validation."
+}

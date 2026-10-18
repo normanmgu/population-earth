@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-18",
+  "browser": "155.0.8059.84",
+  "device": "M0 MacBook Air M2 / 8 GB",
+  "graphics": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+  "build": "Vite development, 48-city sample; headless installed Chrome; not release certification",
+  "viewport": [
+    1440,
+    900
+  ],
+  "dpr": 1.5,
+  "route": "30 seconds after 120-frame warm-up; sinusoidal Asia yaw ±0.36 radians, pitch ±0.12 radians, distance 2.45–3.15R; reduced-motion intro disabled; all city effects enabled",
+  "elapsedMs": 30015.6,
+  "frameIntervals": {
+    "samples": 1762,
+    "medianMs": 16.69999999999709,
+    "p95Ms": 16.799999999995634,
+    "maxMs": 583.3000000000029
+  },
+  "frameBudget20msPassed": true,
+  "longTasks": [],
+  "selectionFeedback": {
+    "samples": 20,
+    "medianMs": 13.400000095367432,
+    "p95Ms": 16.799999952316284,
+    "maxMs": 51.799999952316284
+  },
+  "selectionBudget100msPassed": true,
+  "drawCalls": 5,
+  "rendererMemory": {
+    "geometries": 4,
+    "textures": 2
+  },
+  "heapBytes": {
+    "baseline": 13563736,
+    "before30Toggles": 16061408,
+    "after30Toggles": 16275372,
+    "delta": 213964
+  },
+  "limitations": [
+    "RAF intervals measure browser scheduling during continuous rendering, not GPU timer queries.",
+    "Selection timing is click dispatch to next frame after details enter the DOM.",
+    "GPU byte total and throttled production cold load not measured.",
+    "Development QA hook snapshots add allocations; full 12,138-city release remains M3."
+  ]
+}

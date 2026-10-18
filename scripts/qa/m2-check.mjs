@@ -1,0 +1,179 @@
+import { chromium, expect } from '@playwright/test';
+import fs from 'node:fs/promises';
+const browser = await chromium.launch({ channel: 'chrome', headless: true });
+const errors = [], checks = [];
+const options = { viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1.5, reducedMotion: 'reduce' };
+const page = await browser.newPage(options);
+const watch = p => { p.on('pageerror', e => errors.push(e.message)); p.on('console', m => { if (m.type() === 'error' && /shader|WebGLProgram/i.test(m.text())) errors.push(m.text()); }); };
+watch(page);
+const ready = async p => { await p.waitForFunction(() => window.__populationEarth?.debug.snapshot().heights.length === 48 && document.querySelector('.status')?.textContent === ''); await p.waitForTimeout(120); };
+const snapshot = p => p.evaluate(() => window.__populationEarth.debug.snapshot());
+const screenshot = name => page.screenshot({ path: `docs/m2/${name}-chrome.png` });
+const closePanel = async p => { const close = p.getByRole('button', { name: 'Close panel' }); if (await close.isVisible()) await close.click(); };
+const search = async (p, text) => { await p.getByRole('button', { name: 'Browse cities' }).click(); await p.getByRole('searchbox').fill(text); };
+try {
+  await page.goto('http://127.0.0.1:5173'); await ready(page);
+  await expect(page.locator('header')).toContainText('Sample: 48 urban areas');
+  await expect(page.locator('.scale-label')).toContainText('Height: linear');
+  await page.getByRole('button', { name: 'Reset view' }).click();
+  const original = await snapshot(page);
+  await screenshot('opening');
+  await page.waitForTimeout(300);
+  expect((await snapshot(page)).renderCount).toBe(original.renderCount);
+  checks.push('48-city load, persistent disclosure, linear default, reduced-motion idle rendering');
+
+  await page.getByRole('button', { name: 'Logarithmic', exact: true }).click();
+  await expect(page.locator('.scale-label')).toContainText('Height: logarithmic');
+  const log = await snapshot(page);
+  expect(log.heights[42]).toBeGreaterThan(original.heights[42] * 80);
+  await screenshot('logarithmic');
+  await page.getByRole('button', { name: 'Linear', exact: true }).click();
+  expect((await snapshot(page)).heights).toEqual(original.heights);
+  checks.push('Fixed linear/log geometry and persistent scale labels');
+
+  await search(page, 'jakarta');
+  await page.getByRole('searchbox').press('Tab');
+  await page.keyboard.press('Enter');
+  await expect(page.getByRole('heading', { name: 'Jakarta', exact: true })).toBeVisible();
+  await expect(page.getByTestId('population')).toHaveText('≈ 41,914,000');
+  expect((await snapshot(page)).heights).toEqual(original.heights);
+  await screenshot('selection');
+  await page.getByRole('button', { name: 'Inspect source & methodology' }).click();
+  await expect(page.locator('.panel-body')).toContainText('City (Degree of Urbanization, WUP 2025)');
+  await expect(page.locator('.panel-body')).toContainText('CC-BY-3.0-IGO');
+  await expect(page.locator('.panel-body')).toContainText('no separately verified local-script names');
+  await screenshot('source');
+  checks.push('Keyboard search selection, unchanged heights, rounded source precision, provenance and definition');
+  await closePanel(page);
+
+  await page.getByRole('checkbox', { name: 'City pillars', exact: true }).uncheck();
+  await expect(page.locator('.city-label:visible')).toHaveCount(0);
+  await search(page, 'cairo'); await page.locator('.city-list button').click();
+  await expect(page.getByTestId('population')).toHaveText('≈ 25,566,000');
+  await expect(page.getByRole('button', { name: 'Zoom to city' })).toBeDisabled();
+  await page.getByRole('checkbox', { name: 'City pillars', exact: true }).check();
+  await page.getByRole('button', { name: 'Zoom to city' }).click();
+  await closePanel(page);
+  await page.getByRole('button', { name: 'Reset view' }).click();
+  await page.waitForTimeout(120);
+  expect((await snapshot(page)).heights).toEqual(original.heights);
+  checks.push('Layer toggle, hidden-layer search, zoom to selection and unchanged geometry');
+
+  const point = (await snapshot(page)).points.find(p => p.id === 'un-wup2025:5590');
+  // Base anchors of Jakarta/Bandung overlap at this view; retain both choices.
+  await page.mouse.click(point.baseX, point.baseY);
+  await expect(page.getByRole('heading', { name: 'Nearby cities' })).toBeVisible();
+  await expect(page.locator('.city-list')).toContainText('Jakarta');
+  await expect(page.locator('.city-list')).toContainText('Bandung');
+  await page.locator('.city-list button').filter({ hasText: 'Bandung' }).click();
+  await expect(page.getByRole('heading', { name: 'Bandung', exact: true })).toBeVisible();
+  await screenshot('nearby-selection');
+  await closePanel(page);
+  await page.mouse.move(point.x, point.y); await page.mouse.down();
+  await page.mouse.move(point.x + 90, point.y, { steps: 6 });
+  await page.mouse.move(point.x, point.y, { steps: 6 }); await page.mouse.up();
+  await expect(page.getByRole('complementary')).toHaveCount(0);
+  await page.getByRole('button', { name: 'Reset view' }).click();
+  await page.mouse.click(point.x, point.y);
+  await expect(page.getByRole('heading', { name: 'Jakarta', exact: true })).toBeVisible();
+  checks.push('Raycast pillar selection, dense-region chooser, drag out-and-back does not select');
+
+  await page.getByRole('button', { name: 'Zoom to city' }).click();
+  await closePanel(page); await screenshot('dense-region');
+  await page.locator('canvas').focus(); await page.keyboard.press('ArrowRight');
+  expect((await snapshot(page)).camera).not.toEqual(original.camera);
+  await page.keyboard.press('Home'); await page.waitForTimeout(120);
+  expect((await snapshot(page)).camera).toEqual(original.camera);
+  const visibleLabels = await page.locator('.city-label:visible').count();
+  expect(visibleLabels).toBeLessThanOrEqual(12);
+  const labelAudit = await page.evaluate(() => {
+    const points = window.__populationEarth.debug.snapshot().points;
+    const labels = [...document.querySelectorAll('.city-label:not([hidden])')];
+    const rectangles = labels.map(el => el.getBoundingClientRect());
+    return labels.every(el => points.find(p => p.id === el.dataset.cityId)?.visible) && rectangles.every((a, i) => rectangles.slice(i + 1).every(b => a.right <= b.left || b.right <= a.left || a.bottom <= b.top || b.bottom <= a.top));
+  });
+  expect(labelAudit).toBe(true);
+  checks.push('Keyboard rotation/reset, capped labels, no far-side HTML labels');
+
+  await page.setViewportSize({ width: 390, height: 844 });
+  // Collapse the display panel to leave the mobile globe clear.
+  await page.getByRole('button', { name: 'Display' }).click();
+  await page.getByRole('button', { name: 'Reset view' }).click();
+  await screenshot('mobile');
+  await search(page, 'sydney'); await page.locator('.city-list button').click();
+  await page.getByRole('button', { name: 'Zoom to city' }).click();
+  await page.waitForTimeout(120);
+  const focusedCity = (await snapshot(page)).points.find(p => p.id === 'un-wup2025:2139');
+  const mobilePanel = await page.getByRole('complementary').boundingBox();
+  expect(focusedCity.y).toBeLessThan(mobilePanel.y);
+  await screenshot('mobile-selection');
+  expect(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)).toBe(false);
+  expect(await page.locator('.city-label:visible').count()).toBeLessThanOrEqual(5);
+  await expect(page.locator('header')).toContainText('Sample: 48 urban areas');
+  checks.push('390px layout, sample disclosure, searchable selection and five-label cap');
+
+  await page.setViewportSize(options.viewport);
+  await page.evaluate(() => document.querySelector('canvas').getContext('webgl2').getExtension('WEBGL_lose_context').loseContext());
+  await page.getByRole('heading', { name: 'Graphics connection interrupted' }).waitFor();
+  await expect(page.getByTestId('population')).toHaveText('≈ 4,151,000');
+  await page.getByRole('button', { name: 'Try again' }).click(); await ready(page);
+  await expect(page.getByTestId('population')).toHaveText('≈ 4,151,000');
+  checks.push('Context loss preserves details and rebuilds all resources');
+
+  const unsupported = await browser.newPage(options); watch(unsupported);
+  await unsupported.addInitScript(() => { const original = HTMLCanvasElement.prototype.getContext; HTMLCanvasElement.prototype.getContext = function(type, ...args) { return type === 'webgl2' ? null : original.call(this, type, ...args); }; });
+  await unsupported.goto('http://127.0.0.1:5173');
+  await unsupported.getByRole('heading', { name: 'This globe needs WebGL2' }).waitFor();
+  await unsupported.getByRole('searchbox').fill('paris'); await unsupported.locator('.city-list button').click();
+  await expect(unsupported.getByTestId('population')).toHaveText('≈ 9,382,000');
+  await unsupported.getByRole('button', { name: 'Inspect source & methodology' }).click();
+  await expect(unsupported.locator('.panel-body')).toContainText('CC-BY-3.0-IGO');
+  await unsupported.screenshot({ path: 'docs/m2/fallback-chrome.png' });
+  await unsupported.close(); checks.push('WebGL2 unavailable still supports search, details and sources');
+
+  const missing = await browser.newPage(options); watch(missing);
+  await missing.route('**/cities.json', r => r.abort()); await missing.goto('http://127.0.0.1:5173');
+  await missing.getByRole('button', { name: 'Retry city data' }).waitFor();
+  await expect(missing.locator('.status')).toBeEmpty();
+  await missing.unroute('**/cities.json'); await missing.getByRole('button', { name: 'Retry city data' }).click(); await ready(missing);
+  await missing.close(); checks.push('City-data failure/retry independent of globe');
+  const asset = await browser.newPage(options); watch(asset);
+  await asset.route('**/earth-base-2k.png', r => r.abort()); await asset.goto('http://127.0.0.1:5173');
+  await asset.getByRole('button', { name: 'Retry texture' }).waitFor();
+  await search(asset, 'jakarta'); await asset.locator('.city-list button').click();
+  await expect(asset.getByTestId('population')).toHaveText('≈ 41,914,000');
+  await asset.unroute('**/earth-base-2k.png'); await asset.getByRole('button', { name: 'Retry texture' }).click(); await ready(asset);
+  await asset.close(); checks.push('Texture failure/retry independent of city data');
+
+  const animated = await browser.newPage({ ...options, reducedMotion: 'no-preference' }); watch(animated);
+  await animated.goto('http://127.0.0.1:5173');
+  await animated.waitForFunction(() => { const s = window.__populationEarth?.debug.snapshot(); return s?.heights.length === 48 && s.growth > 0 && s.growth < 1; });
+  await animated.waitForFunction(() => window.__populationEarth.debug.snapshot().growth === 1);
+  const moving = (await snapshot(animated)).camera;
+  await animated.waitForTimeout(200);
+  expect((await snapshot(animated)).camera).not.toEqual(moving);
+  await animated.getByRole('button', { name: 'Browse cities' }).click();
+  await animated.waitForTimeout(300);
+  const stopped = (await snapshot(animated)).camera;
+  await animated.waitForTimeout(200);
+  expect((await snapshot(animated)).camera).toEqual(stopped);
+  await closePanel(animated);
+  await animated.getByRole('button', { name: 'Replay growth' }).click();
+  await animated.waitForFunction(() => window.__populationEarth.debug.snapshot().growth < 1);
+  await animated.getByRole('checkbox', { name: 'Growth animation' }).uncheck();
+  await animated.waitForFunction(() => window.__populationEarth.debug.snapshot().growth === 1);
+  await animated.getByRole('checkbox', { name: 'Growth animation' }).check();
+  await animated.getByRole('button', { name: 'Replay growth' }).click();
+  await animated.emulateMedia({ reducedMotion: 'reduce' });
+  await animated.waitForFunction(() => window.__populationEarth.debug.snapshot().growth === 1);
+  await expect(animated.getByRole('button', { name: 'Replay growth' })).toBeDisabled();
+  await animated.waitForTimeout(120); // allow the final preference-change frame to settle
+  const idle = (await snapshot(animated)).renderCount;
+  await animated.waitForTimeout(300); expect((await snapshot(animated)).renderCount).toBe(idle);
+  await animated.close(); checks.push('Normal-motion growth, replay, growth toggle and live reduced-motion change');
+
+  const graphics = await page.evaluate(() => { const gl = document.querySelector('canvas').getContext('webgl2'); const ext = gl.getExtension('WEBGL_debug_renderer_info'); return { webgl: gl.getParameter(gl.VERSION), renderer: ext ? gl.getParameter(ext.UNMASKED_RENDERER_WEBGL) : 'unavailable' }; });
+  await fs.writeFile('docs/m2/chrome-check.json', JSON.stringify({ date: '2026-10-18', browser: browser.version(), mode: 'headless installed Chrome on M0 host', viewport: [1440, 900], dpr: 1.5, graphics, checks, errors }, null, 2) + '\n');
+  if (errors.length) throw Error(errors.join('\n'));
+  console.log(`${checks.length} M2 Chrome check groups passed`);
+} finally { await browser.close(); }

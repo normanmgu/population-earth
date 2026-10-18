@@ -1,0 +1,26 @@
+{
+  "browser": "155.0.8059.84",
+  "mode": "headless installed Chrome on M0 host",
+  "viewport": [
+    1440,
+    900
+  ],
+  "dpr": 1.5,
+  "graphics": {
+    "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)"
+  },
+  "checks": [
+    "WebGL2 texture load",
+    "keyboard rotation",
+    "drag rotation",
+    "zoom",
+    "exact reset",
+    "reduced-motion stillness",
+    "context-loss message and rebuild",
+    "390px responsive layout",
+    "WebGL2 unavailable message",
+    "asset failure and retry"
+  ],
+  "errors": []
+}

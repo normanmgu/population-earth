@@ -1,0 +1,346 @@
+{
+  "method": "Independent openpyxl reader compared every sample name, country code, source ID, population conversion and coordinate to original XLSX; importer uses XML stdlib reader.",
+  "python": "3.12.14",
+  "openpyxl": "3.1.5",
+  "checked": 48,
+  "passed": true,
+  "sourceSha256": "3a96030d87aec6c1c50f658d5321067d6345e1ab936c5d2854524f972caa75c0",
+  "records": [
+    {
+      "id": "un-wup2025:5590",
+      "row": 9580,
+      "populationThousands": 41913.86,
+      "populationPeople": 41913860,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:5991",
+      "row": 9490,
+      "populationThousands": 8909.104,
+      "populationPeople": 8909104,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:6249",
+      "row": 722,
+      "populationThousands": 36585.479,
+      "populationPeople": 36585479,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:7537",
+      "row": 701,
+      "populationThousands": 4983.553,
+      "populationPeople": 4983553,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:6030",
+      "row": 10647,
+      "populationThousands": 33412.512,
+      "populationPeople": 33412512,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:4490",
+      "row": 10596,
+      "populationThousands": 12964.145,
+      "populationPeople": 12964145,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:8364",
+      "row": 8533,
+      "populationThousands": 30222.405,
+      "populationPeople": 30222405,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:11821",
+      "row": 8057,
+      "populationThousands": 22549.738,
+      "populationPeople": 22549738,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:11738",
+      "row": 3438,
+      "populationThousands": 29558.908,
+      "populationPeople": 29558908,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:11306",
+      "row": 2437,
+      "populationThousands": 27563.372,
+      "populationPeople": 27563372,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:4435",
+      "row": 5381,
+      "populationThousands": 25566.102,
+      "populationPeople": 25566102,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:275",
+      "row": 5387,
+      "populationThousands": 7266.957,
+      "populationPeople": 7266957,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:1265",
+      "row": 12301,
+      "populationThousands": 12791.699,
+      "populationPeople": 12791699,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:7330",
+      "row": 12447,
+      "populationThousands": 5627.706,
+      "populationPeople": 5627706,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:3664",
+      "row": 14274,
+      "populationThousands": 7077.175,
+      "populationPeople": 7077175,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:413",
+      "row": 14247,
+      "populationThousands": 4508.921,
+      "populationPeople": 4508921,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:2033",
+      "row": 10817,
+      "populationThousands": 6134.334,
+      "populationPeople": 6134334,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:3077",
+      "row": 10812,
+      "populationThousands": 1456.207,
+      "populationPeople": 1456207,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:5938",
+      "row": 15518,
+      "populationThousands": 10416.42,
+      "populationPeople": 10416420,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:3979",
+      "row": 15435,
+      "populationThousands": 2631.757,
+      "populationPeople": 2631757,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:2994",
+      "row": 6265,
+      "populationThousands": 9381.921,
+      "populationPeople": 9381921,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:4068",
+      "row": 6248,
+      "populationThousands": 1202.985,
+      "populationPeople": 1202985,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:5576",
+      "row": 6329,
+      "populationThousands": 3560.908,
+      "populationPeople": 3560908,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:675",
+      "row": 6350,
+      "populationThousands": 2717.087,
+      "populationPeople": 2717087,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:8354",
+      "row": 16007,
+      "populationThousands": 13920.148,
+      "populationPeople": 13920148,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:1725",
+      "row": 15960,
+      "populationThousands": 12740.42,
+      "populationPeople": 12740420,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:2925",
+      "row": 1792,
+      "populationThousands": 5494.431,
+      "populationPeople": 5494431,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:3645",
+      "row": 1764,
+      "populationThousands": 2668.723,
+      "populationPeople": 2668723,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:5439",
+      "row": 11157,
+      "populationThousands": 17734.212,
+      "populationPeople": 17734212,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:3099",
+      "row": 11185,
+      "populationThousands": 4135.44,
+      "populationPeople": 4135440,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:7303",
+      "row": 1472,
+      "populationThousands": 18949.79,
+      "populationPeople": 18949790,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:7935",
+      "row": 1427,
+      "populationThousands": 9500.336,
+      "populationPeople": 9500336,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:4459",
+      "row": 473,
+      "populationThousands": 14017.736,
+      "populationPeople": 14017736,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:2381",
+      "row": 482,
+      "populationThousands": 1460.491,
+      "populationPeople": 1460491,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:1987",
+      "row": 13251,
+      "populationThousands": 10580.241,
+      "populationPeople": 10580241,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:3272",
+      "row": 13225,
+      "populationThousands": 977.496,
+      "populationPeople": 977496,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:2139",
+      "row": 589,
+      "populationThousands": 4150.917,
+      "populationPeople": 4150917,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:1634",
+      "row": 578,
+      "populationThousands": 3639.893,
+      "populationPeople": 3639893,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:1005",
+      "row": 11748,
+      "populationThousands": 1123.094,
+      "populationPeople": 1123094,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:1232",
+      "row": 11751,
+      "populationThousands": 275.322,
+      "populationPeople": 275322,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:338",
+      "row": 6195,
+      "populationThousands": 225.882,
+      "populationPeople": 225882,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:177",
+      "row": 6194,
+      "populationThousands": 53.31,
+      "populationPeople": 53310,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:9137",
+      "row": 8332,
+      "populationThousands": 50.018,
+      "populationPeople": 50018,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:8683",
+      "row": 12132,
+      "populationThousands": 50.144,
+      "populationPeople": 50144,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:4972",
+      "row": 6421,
+      "populationThousands": 50.837,
+      "populationPeople": 50837,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:178",
+      "row": 15984,
+      "populationThousands": 51.888,
+      "populationPeople": 51888,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:8215",
+      "row": 1413,
+      "populationThousands": 50.677,
+      "populationPeople": 50677,
+      "passed": true
+    },
+    {
+      "id": "un-wup2025:1118",
+      "row": 566,
+      "populationThousands": 55.26,
+      "populationPeople": 55260,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "population-earth",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0 <23"
+  },
+  "scripts": {
+    "data:extract": "node scripts/data/extract.mjs",
+    "data:import": "tsx scripts/data/import-cities.ts",
+    "data:validate": "tsx scripts/data/validate.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "npm run data:validate && npm run typecheck && vite build",
+    "dev": "vite",
+    "preview": "vite preview",
+    "data:import:full": "tsx scripts/data/import-cities.ts --full"
+  },
+  "dependencies": {
+    "ajv": "8.20.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/three": "0.186.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.4",
+    "vitest": "5.0.5"
+  }
+}

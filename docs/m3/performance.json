@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-18",
+  "browser": "155.0.8059.84",
+  "device": "M0 MacBook Air M2 / 8 GB",
+  "graphics": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+  "build": "Vite optimized benchmark build, 12,138-city full release; QA hook enabled; headless installed Chrome",
+  "viewport": [
+    1440,
+    900
+  ],
+  "dpr": 1.5,
+  "route": "30 seconds after 120-frame warm-up; sinusoidal Asia yaw ±0.36 radians, pitch ±0.12 radians, distance 2.45–3.15R; reduced-motion intro disabled; all city effects enabled",
+  "elapsedMs": 30015.4,
+  "frameIntervals": {
+    "samples": 1800,
+    "medianMs": 16.69999999999891,
+    "p95Ms": 16.700000000004366,
+    "maxMs": 33.29999999999927
+  },
+  "frameBudget20msPassed": true,
+  "longTasks": [],
+  "selectionFeedback": {
+    "samples": 20,
+    "medianMs": 16,
+    "p95Ms": 17.699999809265137,
+    "maxMs": 39.799999952316284
+  },
+  "selectionBudget100msPassed": true,
+  "searchFeedback": {
+    "samples": 20,
+    "medianMs": 26.100000143051147,
+    "p95Ms": 27.799999952316284,
+    "maxMs": 27.90000009536743
+  },
+  "pickingCpu": {
+    "samples": 100,
+    "medianMs": 0.7000000476837158,
+    "p95Ms": 1.1000001430511475,
+    "maxMs": 4.700000047683716
+  },
+  "resources": {
+    "bufferBytes": 3339528,
+    "textureBytesWithMipmaps": 11184810.666666666,
+    "applicationResourceBytes": 14524338.666666666,
+    "drawingBufferPixels": 2916000,
+    "renderTargets": 0,
+    "note": "Application buffer allocations plus RGBA8 texture/mipmap estimate. Driver copies, default framebuffer/MSAA and internal renderer textures are excluded."
+  },
+  "drawCalls": 5,
+  "rendererMemory": {
+    "geometries": 4,
+    "textures": 2
+  },
+  "heapBytes": {
+    "baseline": 11519324,
+    "before30Toggles": 13809540,
+    "after30Toggles": 13900028,
+    "delta": 90488
+  },
+  "limitations": [
+    "RAF intervals measure browser scheduling during continuous rendering, not GPU timer queries.",
+    "Selection timing is list click dispatch to next frame after details enter the DOM. Search timing is input dispatch to two animation frames, including React rendering. Picking CPU timing separately scans all cities.",
+    "GPU byte total and throttled production cold load are reported separately.",
+    "Optimized benchmark build exposes a QA hook absent from the ordinary production build."
+  ]
+}

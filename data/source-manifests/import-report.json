@@ -1,0 +1,12 @@
+{
+  "sourceRows": 16828,
+  "eligible2025": 12138,
+  "excluded": 4690,
+  "missing2025": 4690,
+  "sampleCount": 48,
+  "minimumPeople": 50018,
+  "maximumPeople": 41913860,
+  "countries": 21,
+  "sampleSha256": "c490cb259f120d64e129781f2750627d730892f9619bb64f8a9d44b2a450fc92",
+  "fullReleasePopulationCeiling": 41913860
+}

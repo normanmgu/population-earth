@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0.0",
+  "sources": [
+    {
+      "id": "un-wup2025-f21",
+      "publisher": "United Nations, DESA, Population Division",
+      "title": "World Urbanization Prospects: The 2025 Revision, File 21",
+      "url": "https://population.un.org/wup/assets/Download/Cities/WUP2025-F21-DEGURBA-Cities_Pop.xlsx",
+      "retrievedDate": "2026-10-17",
+      "retrievalTimezone": "America/Chicago",
+      "sha256": "3a96030d87aec6c1c50f658d5321067d6345e1ab936c5d2854524f972caa75c0",
+      "sheet": "Data",
+      "headerRow": 1,
+      "columns": {
+        "B": "Location",
+        "E": "ISO3_Code",
+        "G": "City_Code",
+        "H": "City_Name",
+        "J": "PWCent_Longitude",
+        "K": "PWCent_Latitude",
+        "BJ": "2025"
+      },
+      "units": "thousands of people",
+      "conversion": "Multiply stored thousands by 1000; reject non-integer-person precision beyond 0.00001 person, then remove binary float noise. Stored precision up to 0.001 thousand; inspected Excel cells display whole thousands (#,##0).",
+      "referenceYear": 2025,
+      "referenceDate": "mid-year",
+      "valueStatus": "estimate",
+      "statusEvidence": "https://population.un.org/wup/faqs (Data and Methods: estimates 1950–2025)",
+      "coordinateMethod": "Population-weighted centroid; info!A33:B34",
+      "coordinateDatum": "Geographic decimal degrees; WGS84 interpretation for orbital display. F21 does not explicitly state datum. No reprojection performed.",
+      "license": "CC-BY-3.0-IGO",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/igo/",
+      "licenseEvidence": "info!D13",
+      "attribution": "United Nations, Department of Economic and Social Affairs, Population Division (2025). World Urbanization Prospects: The 2025 Revision, Online Edition. Sample selection and unit conversion by Population Earth.",
+      "namePolicy": "Retain City_Name verbatim as the publisher display name in nameEn, including romanized names and parenthetical English variants. No separately verified local-script names.",
+      "displayPrecisionPeople": 1000,
+      "displayPrecisionNote": "Show approximate rounded thousands; stored values do not establish person-level accuracy."
+    }
+  ],
+  "definitions": [
+    {
+      "id": "un-wup2025-degurba-city",
+      "label": "City (Degree of Urbanization, WUP 2025)",
+      "description": "Publisher harmonized city definition using population, density and contiguity on 1 km² grids. At least 50,000 inhabitants and high-density areas at least 1,500 inhabitants/km²; see full methodology for grid rules. Not city proper or a nationally defined metropolitan area.",
+      "evidence": "F21 info!A17:A20",
+      "url": "https://population.un.org/wup/faqs"
+    }
+  ],
+  "disclosure": "Sample: 48 urban areas",
+  "coverage": "sample",
+  "datasetVersion": "m0-2025-v1",
+  "eligibleCount": 12138,
+  "display": {
+    "populationReference": 41913860,
+    "heightReference": 0.12,
+    "heightReferenceStatus": "provisional; visual calibration in M2",
+    "logReferencePeople": 50000
+  }
+}

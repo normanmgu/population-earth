@@ -1,0 +1,158 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Population Earth city dataset v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "datasetVersion",
+    "coverage",
+    "thresholdPeople",
+    "referenceYear",
+    "cities"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "datasetVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "coverage": {
+      "enum": [
+        "sample",
+        "full"
+      ]
+    },
+    "thresholdPeople": {
+      "const": 50000
+    },
+    "referenceYear": {
+      "const": 2025
+    },
+    "cities": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "sourceRecordId",
+          "nameEn",
+          "coordinateSourceId",
+          "coordinateMethod",
+          "definitionId",
+          "populationSourceId",
+          "localNames",
+          "countryOrArea",
+          "longitude",
+          "latitude",
+          "population",
+          "referenceYear",
+          "valueStatus"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceRecordId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "nameEn": {
+            "type": "string",
+            "minLength": 1
+          },
+          "coordinateSourceId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "coordinateMethod": {
+            "type": "string",
+            "minLength": 1
+          },
+          "definitionId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "populationSourceId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "localNames": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "value",
+                "language",
+                "sourceId"
+              ],
+              "properties": {
+                "value": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "language": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "sourceId": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          },
+          "countryOrArea": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "code",
+              "name",
+              "codeSystem"
+            ],
+            "properties": {
+              "code": {
+                "type": "string",
+                "minLength": 1
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "codeSystem": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "longitude": {
+            "type": "number",
+            "minimum": -180,
+            "maximum": 180
+          },
+          "latitude": {
+            "type": "number",
+            "minimum": -90,
+            "maximum": 90
+          },
+          "population": {
+            "type": "integer",
+            "minimum": 50000
+          },
+          "referenceYear": {
+            "const": 2025
+          },
+          "valueStatus": {
+            "const": "estimate"
+          }
+        }
+      }
+    }
+  }
+}

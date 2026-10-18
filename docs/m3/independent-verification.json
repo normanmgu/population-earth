@@ -1,0 +1,9 @@
+{
+  "method": "Independent openpyxl XLSX reader compared all eligible IDs, names, countries, coordinates, populations and row/cell provenance; verified exact excluded membership and reasons.",
+  "openpyxl": "3.1.5",
+  "sourceRows": 16828,
+  "checked": 12138,
+  "excludedChecked": 4690,
+  "sourceSha256": "3a96030d87aec6c1c50f658d5321067d6345e1ab936c5d2854524f972caa75c0",
+  "passed": true
+}
